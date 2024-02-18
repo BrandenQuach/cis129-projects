@@ -2,7 +2,7 @@
 # Receipt for a coffee shop simulator
 
 Declare integer numberOfCoffeePurchased
-Declare int numberOfMuffinPurchased
+Declare Int numberOfMuffinPurchased
 Declare Real priceOfCoffee
 Declare Real priceOfMuffin
 
