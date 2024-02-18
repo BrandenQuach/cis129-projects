@@ -39,4 +39,5 @@ totalcost = coffeecost + muffincost + teacost + bagelcost + taxamount
 # Displays Total
 print ('---------')
 print ('Total: $', totalcost)
+print ('Thank you for your purchase! :)')
 print ('***************************************')
