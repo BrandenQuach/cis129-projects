@@ -7,10 +7,12 @@ priceofmuffin = 4
 tax = 0.06
 
 # Displays Prompts
-print ('***************************************','My Coffee and Muffin Shop')
+print ('***************************************')
+print ('My Coffee and Muffin Shop')
 coffeeamount = int(input('Number of coffees bought?'))
 muffinamount = int(input('Number of muffins bought?'))
-print ('***************************************', ' ', '***************************************')
+print ('***************************************')
+print ('***************************************')
 
 # Equations
 coffeecost = coffeeamount * 5
