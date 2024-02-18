@@ -22,7 +22,7 @@ taxamount = tax * (coffeecost + muffincost)
 # Displays Amounts
 print ('My Coffee and Muffin Shop Receipt')
 print (coffeeamount ,'Coffee at $5 each: $', coffeecost)
-print (muffinamount ,'Muffin at $4 each: $', muffin cost)
+print (muffinamount ,'Muffin at $4 each: $', muffincost)
 print ('6% tax: $', taxamount)
 
 # Calculates Total
