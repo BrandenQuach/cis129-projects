@@ -1,8 +1,8 @@
 # Author: Branden Quach
 # Receipt for a coffee shop simulator
 
-Declare Integer numberOfCoffeePurchased
-Declare Integer numberOfMuffinPurchased
+Declare integer numberOfCoffeePurchased
+Declare int numberOfMuffinPurchased
 Declare Real priceOfCoffee
 Declare Real priceOfMuffin
 
