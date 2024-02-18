@@ -15,8 +15,7 @@ coffeeamount = int(input('Number of coffees bought?'))
 muffinamount = int(input('Number of muffins bought?'))
 teaamount = int(input('Number of teas bought?'))
 bagelamount = int(input('Number of bagels bought?'))
-print ('***************************************')
-print ('***************************************')
+print ('***************************************\n\n***************************************')
 
 # Equations
 coffeecost = coffeeamount * 5
