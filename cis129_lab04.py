@@ -24,7 +24,7 @@ else:
   storeAmount = 0
 
 # This code gets the percent of increase in sales
-salesIncrease = float(input('Percentage of sales increase?')
+salesIncrease = float(input('Percentage of sales increase?'))
 salesIncrease = salesIncrease / 100
 
 # This code determines the empAmount bonus
