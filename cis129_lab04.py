@@ -35,7 +35,7 @@ elif salesIncrease >= .04:
 elif salesIncrease >= .03:
   empAmount = 40
 else:
-  empAmount = 40
+  empAmount = 0
 
 # This code prints the bonus information
 print("The store bonus amount is $", storeAmount)
