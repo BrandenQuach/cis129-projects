@@ -13,4 +13,5 @@ keepGoing = "y"
 # Loop to run program again
 while keepGoing = "y":
   # Code to set values of variables
-  
+  totalBottles = totalBottles + todayBottles
+  todayBottles = 
