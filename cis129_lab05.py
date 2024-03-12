@@ -18,4 +18,7 @@ while keepGoing = "y":
   totalPayout = totalBottles * .1
   print('The total number of bottles collected is', totalBottles)
   print('The total paid out is $', totalPayout, end='\n')
-  keepGoing = (str(input('Do you want to enter another week's worth of data?', \n, 
+
+  print("Do you want to enter another week's worth of data?")
+  keepGoing = (str(input('(Enter y or n): ')))
+break
