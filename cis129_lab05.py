@@ -14,4 +14,4 @@ keepGoing = "y"
 while keepGoing = "y":
   # Code to set values of variables
   totalBottles = totalBottles + todayBottles
-  todayBottles = 
+  todayBottles = (int(input('Enter the number of bottles for day #(counter): ')))
