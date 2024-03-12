@@ -1,7 +1,7 @@
 # Lab 5: The Bottle Return Program
 # Author: Branden Quach
 # March 12, 2024
-# Bottle Return
+# Collects bottle amounts per week to show the total payout.
 
 # Declare Variables
 totalBottles = 0
