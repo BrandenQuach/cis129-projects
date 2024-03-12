@@ -20,9 +20,11 @@ while keepGoing == "y":
     counter = counter + 1
   # Code to print final results
   else:
+    print()
     print('The total number of bottles collected is', totalBottles, '.')
     print('The total paid out is $', "%.2f" % totalPayout, '.')
     # Code to ask for another week of input
+    print()
     print("Do you want to enter another week's worth of data?")
     keepGoing = str(input('(Enter y or n): '))
     counter = 1
