@@ -11,14 +11,19 @@ totalPayout = 0
 keepGoing = "y"
 
 # Loop to run program again
-while keepGoing = "y":
+while keepGoing == "y":
   # Code to set values of variables
-  totalBottles = totalBottles + todayBottles
-  todayBottles = (int(input('Enter the number of bottles for day #', counter,':')))
-  totalPayout = totalBottles * .1
-  print('The total number of bottles collected is', totalBottles)
-  print('The total paid out is $', totalPayout, end='\n')
-
-  print("Do you want to enter another week's worth of data?")
-  keepGoing = (str(input('(Enter y or n): ')))
+  if counter % 8:
+    todayBottles = int(input(f'Enter the number of bottles for day #{counter}:'))
+    totalBottles = totalBottles + todayBottles
+    totalPayout = totalBottles * 0.1
+    counter = counter + 1
+  # Code to print final results
+  else:
+    print('The total number of bottles collected is', totalBottles, '.')
+    print('The total paid out is $', "%.2f" % totalPayout, '.')
+    # Code to ask for another week of input
+    print("Do you want to enter another week's worth of data?")
+    keepGoing = str(input('(Enter y or n)': '))
+    counter = 1
 break
