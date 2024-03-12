@@ -15,3 +15,7 @@ while keepGoing = "y":
   # Code to set values of variables
   totalBottles = totalBottles + todayBottles
   todayBottles = (int(input('Enter the number of bottles for day #', counter,':')))
+  totalPayout = totalBottles * .1
+  print('The total number of bottles collected is', totalBottles)
+  print('The total paid out is $', totalPayout, end='\n')
+  keepGoing = (str(input('Do you want to enter another week's worth of data?', \n, 
