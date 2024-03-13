@@ -28,5 +28,6 @@ while keepGoing == "y":
     print("Do you want to enter another week's worth of data?")
     keepGoing = str(input('(Enter y or n): '))
     counter = 1
+    totalBottles = 0
   else:
     break
