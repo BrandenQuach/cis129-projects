@@ -13,21 +13,21 @@ keepGoing = 'y'
 # Loop to run program again
 while keepGoing == 'y':
   # Code to set values of variables
-  totalBottles = 0
-  totalPayout = 0
-  counter = 1
-  for counter in range(7):
-    counter += 1
-    todayBottles = (int(input(f'Enter number of bottles for day #{counter}: ')))
-    totalBottles += todayBottles
-    totalPayout = totalBottles * 0.1
+    totalBottles = 0
+    totalPayout = 0
+    counter = 1
+    for counter in range(7):
+        counter += 1
+        todayBottles = (int(input(f'Enter number of bottles for day #{counter}: ')))
+        totalBottles += todayBottles
+        totalPayout = totalBottles * 0.1
 
-# Prints final results
-print()
-print(f'The total number of bottles collected is {totalBottles}')
-print(f'The total paid out is ${totalPayout: .2f}')
-print()
+  # Prints final results
+    print()
+    print(f'The total number of bottles collected is {totalBottles}')
+    print(f'The total paid out is ${totalPayout: .2f}')
+    print()
 
-# Prompts for another week of data
-print("Do you want to enter another week's worth of data?")
-keepGoing = (input('(Enter y or n): '))
+  # Prompts for another week of data
+    print("Do you want to enter another week's worth of data?")
+    keepGoing = (input('(Enter y or n): '))
