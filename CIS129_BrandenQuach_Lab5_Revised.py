@@ -17,9 +17,9 @@ while keepGoing == 'y':
   totalPayout = 0
   counter = 1
   for counter in range(7):
-    counter = counter + 1
+    counter += 1
     todayBottles = (int(input(f'Enter number of bottles for day #{counter}: ')))
-    totalBottles = totalBottles + 1
+    totalBottles += todayBottles
     totalPayout = totalBottles * 0.1
 
 # Prints final results
