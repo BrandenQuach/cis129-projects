@@ -1,7 +1,7 @@
 # Lab 6: Hot Dog Cookout Calculator
 # Author: Branden Quach
 # March 23, 2024
-# Displays hotdog amounts given by input
+# Displays hotdog and hotdog bun package amounts given by input
 
 import math
 
