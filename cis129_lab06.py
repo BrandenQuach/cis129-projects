@@ -14,10 +14,10 @@ def main():
     buns = 10 # Hotdog buns in a package
 
     # Variables
-    int dogsLeft = 0 # Left over hotdogs
-    int bunsLeft = 0 # Left over hotdog buns
-    int minDogs = 0 # Minimum packages of hotdogs
-    int minBuns = 0 # Minimum packages of hotdog buns
+    dogsLeft = 0 # Left over hotdogs
+    bunsLeft = 0 # Left over hotdog buns
+    minDogs = 0 # Minimum packages of hotdogs
+    minBuns = 0 # Minimum packages of hotdog buns
 
     # Calculate leftover hotdogs
     dogsLeft = (dogs - total % dogs) % dogs
@@ -32,10 +32,24 @@ def main():
     minBuns = math.ceil(total / buns)
 
     # Display the results
-    print(f'Leftover hotdogs: {dogsLeft}')
-    print(f'Minimum amount of hotdog packages: {minDogs}')
-    print(f'Leftover hotdog buns: {bunsLeft}')
-    print(f'Minimum amount of hotdog bun packages: {minBuns}')
+    showResults(dogsLeft, minDogs, bunsLeft, minBuns)
 
 def getTotalHotdogs():
-    
+    # Variables
+    people = 0
+    hotdogs = 0
+
+    # Prompts
+    people = (int(input(f'Enter the number of people attending the cookout: ')))
+    hotdogs = (int(input(f'Enter the number of hotdogs for each person: ')))
+
+    # Calculations
+    total = people * hotdogs
+    return total
+# Display the results
+def showResults(int dogsLeft, int minDogs, int bunsLeft, int minbuns)
+    print(f'Minimum packages of hotdogs needed: ', minDogs)
+    print(f'Minimum packages of hotdog buns needed: ', minBuns)
+    print(f'Hotdogs left over: ', dogsLeft)
+    print(f'Hotdog buns left over: ', bunsLeft)
+
