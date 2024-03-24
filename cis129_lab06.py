@@ -7,7 +7,7 @@ import math
 
 def main():
     # Get total number of hotdogs
-    total = totalHotdogs
+    total = getTotalHotdogs()
 
     # Constants
     dogs = 8 # Hotdogs in a package
@@ -47,9 +47,11 @@ def getTotalHotdogs():
     total = people * hotdogs
     return total
 # Display the results
-def showResults(int dogsLeft, int minDogs, int bunsLeft, int minbuns)
+def showResults(dogsLeft, minDogs, bunsLeft, minBuns):
     print(f'Minimum packages of hotdogs needed: ', minDogs)
     print(f'Minimum packages of hotdog buns needed: ', minBuns)
     print(f'Hotdogs left over: ', dogsLeft)
     print(f'Hotdog buns left over: ', bunsLeft)
+if __name__==  "__main__":
+    main()
 
