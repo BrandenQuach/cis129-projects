@@ -9,23 +9,29 @@ import random
 # Main function
 def main():
     print()
-
+    
     # Variables
     endProgram = 'no'
     playerOne = 'NO NAME'
     playerTwo = 'NO NAME'
-
+    
+    # Input names
     playerOne, playerTwo = inputNames(playerOne, playerTwo)
 
+    # Loop program
     while endProgram == 'no':
 
+        # Loop variables
         winnerName = 'NO NAME'
         p1number = 0
         p2number = 0
 
+        # Call dice function
         winnerName = rolldice(p1number, p2number, playerOne, playerTwo, winnerName)
-        
-        print(f'The winner is: ', winnerName)
+
+        # Display winner
+        displayInfo(winnerName)
+
         endProgram = input(f'Do you want to end the program? (yes/no): ')
 
 # Player names
@@ -46,5 +52,8 @@ def rolldice(p1number, p2number, playerOne, playerTwo, winnerName):
         return playerTwo
     else:
         return 'TIE'
-    
+
+# Winner Message
+def displayInfo(winnerName):
+    print(f'The winner is:', winnerName)
 main()
