@@ -38,7 +38,7 @@ def main():
         sectionBseats -= seatsB
         sectionCseats -= seatsC
 
-        receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income)
+        receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income, totalticketsSold, totalIncome)
         seatsLeft(sectionAseats, sectionBseats, sectionCseats)
         
         endProgram = input(f'Do you want to end the program? (yes/no): ')
@@ -60,7 +60,7 @@ def price(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC):
     income = (seatsA * sectionA) + (seatsB * sectionB) + (seatsC * sectionC)
     return income
 # Prints receipt
-def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income):
+def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income, totalticketsSold, totalIncome):
     print()
     print(seatsA, 'seats sold in section A at $', sectionA, 'per ticket')
     print(seatsB, 'seats sold in section B at $', sectionB, 'per ticket')
