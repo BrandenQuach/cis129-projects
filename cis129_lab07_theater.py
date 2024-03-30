@@ -6,7 +6,7 @@
 # Main function
 def main():
     # Variables
-    endProgram = 'no'
+    endProgram = 'yes'
     sectionA = 20 # Cost of one ticket in section A
     sectionB = 15 # Cost of one ticket in section B
     sectionC = 10 # Cost of one ticket in section C
@@ -18,7 +18,7 @@ def main():
     print(f'Section A seats:', sectionAseats, 'at $', sectionA)
     print(f'Section B seats:', sectionBseats, 'at $', sectionB)
     print(f'Section C seats:', sectionCseats, 'at $', sectionC)
-    while endProgram == 'no':
+    while endProgram == 'yes':
         print()
         # Local Variables
         seatsA = 0 # Tickets sold in section A
@@ -48,7 +48,7 @@ def main():
             print()
             print(f'One or more sections are sold out')
         
-        endProgram = input(f'Do you want to end the program? (yes/no): ')
+        endProgram = input(f'Do you want to enter more data? (yes/no): ')
 # Prompts seats sold
 def seatsSoldA(seatsA):
     seatsA = (int(input(f'Enter the number of seats sold in section A: ')))
