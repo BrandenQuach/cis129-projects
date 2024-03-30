@@ -15,7 +15,7 @@ def main():
     sectionCseats = 200
     totalticketsSold = 0
     totalIncome = 0
-
+print(f'Section A: 
     while endProgram == 'no':
         # Local Variables
         seatsA = 0 # Tickets sold in section A
@@ -67,7 +67,7 @@ def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, i
     print(seatsC, 'seats sold in section C at $', sectionC, 'per ticket')
     print()
     print(f'The amount of tickets sold is: ', ticketsSold)
-    print(f'The income is: ', income)
+    print(f'The income is: $', income)
     print()
     print(f'The total amount of tickets sold is: ', totalticketsSold)
     print(f'The total income is: $', totalIncome)
