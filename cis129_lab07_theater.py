@@ -15,7 +15,9 @@ def main():
     sectionCseats = 200
     totalticketsSold = 0
     totalIncome = 0
-print(f'Section A: 
+    print(f'Section A seats:', sectionAseats, 'at $', sectionA)
+    print(f'Section B seats:', sectionBseats, 'at $', sectionB)
+    print(f'Section C seats:', sectionCseats, 'at $', sectionC)
     while endProgram == 'no':
         # Local Variables
         seatsA = 0 # Tickets sold in section A
