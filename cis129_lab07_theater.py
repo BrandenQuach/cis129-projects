@@ -27,12 +27,13 @@ def main():
         seatsA = seatsSoldA(seatsA)
         seatsB = seatsSoldB(seatsB)
         seatsC = seatsSoldC(seatsC)
-        
+        # Call to calculate tickets sold and income
         ticketsSold = inputTickets(seatsA, seatsB, seatsC)
         income = price(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC)
+        # Logs session totals
         totalticketsSold += ticketsSold
         totalIncome += income
-
+        # Calculates seats left
         sectionAseats -= seatsA
         sectionBseats -= seatsB
         sectionCseats -= seatsC
@@ -41,7 +42,7 @@ def main():
         seatsLeft(sectionAseats, sectionBseats, sectionCseats)
         
         endProgram = input(f'Do you want to end the program? (yes/no): ')
-
+# Prompts seats sold
 def seatsSoldA(seatsA):
     seatsA = (int(input(f'Enter the number of seats sold in section A: ')))
     return seatsA
@@ -54,12 +55,13 @@ def seatsSoldC(seatsC):
 def inputTickets(seatsA, seatsB, seatsC):
     ticketsSold = seatsA + seatsB + seatsC
     return ticketsSold
-
+# Calculates income
 def price(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC):
     income = (seatsA * sectionA) + (seatsB * sectionB) + (seatsC * sectionC)
     return income
-
+# Prints receipt
 def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income):
+    print()
     print(seatsA, 'seats sold in section A at $', sectionA, 'per ticket')
     print(seatsB, 'seats sold in section B at $', sectionB, 'per ticket')
     print(seatsC, 'seats sold in section C at $', sectionC, 'per ticket')
@@ -69,10 +71,12 @@ def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, i
     print()
     print(f'The total amount of tickets sold is: ', totalticketsSold)
     print(f'The total income is: $', totalIncome)
+# Prints session totals
 def seatsLeft(sectionAseats, sectionBseats, sectionCseats):
     print()
     print(f'The seats remaining is:')
     print(f'Section A:', sectionAseats)
     print(f'Section B:', sectionBseats)
     print(f'Section C:', sectionCseats)
+    
 main()
