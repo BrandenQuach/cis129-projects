@@ -19,6 +19,7 @@ def main():
     print(f'Section B seats:', sectionBseats, 'at $', sectionB)
     print(f'Section C seats:', sectionCseats, 'at $', sectionC)
     while endProgram == 'no':
+        print()
         # Local Variables
         seatsA = 0 # Tickets sold in section A
         seatsB = 0 # Tickets sold in section B
@@ -42,6 +43,10 @@ def main():
 
         receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, income, totalticketsSold, totalIncome)
         seatsLeft(sectionAseats, sectionBseats, sectionCseats)
+
+        if sectionAseats <= 0 or sectionBseats <= 0 or sectionCseats <= 0:
+            print()
+            print(f'One or more sections are sold out')
         
         endProgram = input(f'Do you want to end the program? (yes/no): ')
 # Prompts seats sold
@@ -70,7 +75,6 @@ def receipt(seatsA, seatsB, seatsC, sectionA, sectionB, sectionC, ticketsSold, i
     print()
     print(f'The amount of tickets sold is: ', ticketsSold)
     print(f'The income is: $', income)
-    print()
     print(f'The total amount of tickets sold is: ', totalticketsSold)
     print(f'The total income is: $', totalIncome)
 # Prints session totals
