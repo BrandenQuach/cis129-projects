@@ -1,7 +1,7 @@
 # Lab 7: Theater Seating
 # Author: Branden Quach
 # March 30. 2024
-# Displays number of tickets and income sold in a theater
+# Displays number of tickets sold and income gained in a theater
 
 # Libraries
 import string
