@@ -17,9 +17,9 @@ def main():
     word = ''.join(characters for characters in lowerWord if characters.isalnum())
     # Calls palindrome function for a true or false output
     if isPalindrome(word):
-        print(f'{getWord} is a palindrome!')
+        print(f'True, {getWord} is a palindrome!')
     else:
-        print(f'{getWord} is not a palindrome.')
+        print(f'False, {getWord} is not a palindrome.')
         
 # Function to receive input from user
 def getValidWord():
