@@ -63,10 +63,12 @@ def popWord():
     character = stack[top]
     top -= 1
     return character
+    
 # Adds character to the top of stack
 def pushWord(character: str):
     global top
     top += 1
     stack[top] = character
+    
 # Calls main function
 main()
