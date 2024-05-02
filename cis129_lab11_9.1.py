@@ -8,13 +8,12 @@ with open('grades.txt', mode='w') as grades:
     # Variables
     total = 0
     count = 0
-    sentinel = -1
     # While loop for multiple entries
     while True:
         # Prompt for grade input
-        grade = input(f'Enter a grade or {sentinel} to quit: ')
+        grade = input(f'Enter a grade or -1 to quit: ')
         # Detects sentinel value to quit program
-        if grade == sentinel:
+        if grade == '-1':
             break
         # Calculates total, count, average
         total += int(grade)
