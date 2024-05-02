@@ -1,7 +1,7 @@
 # Lab 11 9.2: Reading Grades
 # Author: Branden Quach
 # May 1, 2024
-# Reads grade.txt file
+# Reads grade.txt file.
 
 # Opens grades.txt file in read mode
 with open('grades.txt', mode='r') as grades:
