@@ -4,3 +4,7 @@
 # Converts a phrase into the Pig Latin language.
 
 def main():
+    phrase = input(f'Enter a phrase to be translated: ')
+    words = phrase.split()
+  
+  
