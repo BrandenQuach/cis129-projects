@@ -1,6 +1,6 @@
 # Pig Latin Translater
 # Author: Branden Quach
-# May 5, 2024
+# May 10, 2024
 # Converts a phrase into the Pig Latin language.
 
 # Main function
