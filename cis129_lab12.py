@@ -21,18 +21,23 @@ def main():
     inputAge = int(input(f'Enter a pet age: '))
     Animal.setAge(inputAge)
     # Prints values entered
-    print(f'The pet name is ', Animal.getName())
-    print(f'The pet type is ', Animal.getType())
-    print(f'The pet age is ', Animal.getAge())
+    print(f'The pet name is', Animal.getName())
+    print(f'The pet type is', Animal.getType())
+    print(f'The pet age is', Animal.getAge())
 
 # Pet class
-class Pet:
-    # Value assignment
-    def __init__(self, n, t, a):
-        self.name = n
-        self.type = t
-        self.age = a
-    
+class Pet():
+    # Private
+    def __init__(self, name, type, age):
+        self.name = name
+        self.type = type
+        self.age = age
+    # Constructor
+    def Pet(self, n, t, a):
+        Pet.name = n
+        Pet.type = t
+        Pet.age = a
+    # Mutators
     def setName(self, n):
         self.name = n
       
