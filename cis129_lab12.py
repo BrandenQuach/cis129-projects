@@ -17,7 +17,7 @@ def main():
     Animal.setType(inputType)
   
     inputAge = int(input(f'Enter a pet age: '))
-    Animal.SetAge(inputAge)
+    Animal.setAge(inputAge)
 
     print(f'The pet name is ', Animal.getName())
     print(f'The pet type is ', Animal.getType())
