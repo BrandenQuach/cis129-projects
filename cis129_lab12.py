@@ -11,13 +11,13 @@ def main():
     Animal = Pet('', '', 0)
   
     inputName = input(f'Enter a pet name: ')
-    Animal.setName = inputName
+    Animal.setName(inputName)
   
     inputType = input(f'Enter a pet type: ')
-    Animal.setType = inputType
+    Animal.setType(inputType)
   
     inputAge = int(input(f'Enter a pet age: '))
-    Animal.SetAge = inputAge
+    Animal.SetAge(inputAge)
 
     print(f'The pet name is ', Animal.getName())
     print(f'The pet type is ', Animal.getType())
