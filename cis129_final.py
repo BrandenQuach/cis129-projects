@@ -41,13 +41,14 @@ print(f'Answer for Question 7')
 for numbers in range(33, -1, -3):
     print(numbers, end=' ')
 
-print(f'Answer for Question 8')
+print(f'\nAnswer for Question 8')
 myInt = 0
 def squared(myInt):
     myInt = int(input(f'Enter an integer to be squared.'))
-    myInt = myInt * 2
+    myInt = myInt ** 2
     return myInt
-squared(myInt)
+squaredNumber =squared(myInt)
+print(squaredNumber)
 
 print(f'Answer for Question 9')
 from random import randint
