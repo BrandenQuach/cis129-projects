@@ -3,32 +3,36 @@
 # May 16, 2024
 # Prints input into a check protected format
 
+# Main function
 def main():
+    # Variables
     inputName = ''
     inputType = ''
     inputAge = 0
-  
+    # Class variable
     Animal = Pet('', '', 0)
-  
+    # Prompts pet name
     inputName = input(f'Enter a pet name: ')
     Animal.setName(inputName)
-  
+    # Prompts pet type
     inputType = input(f'Enter a pet type: ')
     Animal.setType(inputType)
-  
+    # Prompts pet age
     inputAge = int(input(f'Enter a pet age: '))
     Animal.setAge(inputAge)
-
+    # Prints values entered
     print(f'The pet name is ', Animal.getName())
     print(f'The pet type is ', Animal.getType())
     print(f'The pet age is ', Animal.getAge())
-  
+
+# Pet class
 class Pet:
+    # Value assignment
     def __init__(self, n, t, a):
         self.name = n
         self.type = t
         self.age = a
-      
+    
     def setName(self, n):
         self.name = n
       
@@ -46,5 +50,5 @@ class Pet:
       
     def getAge(self):
         return self.age
-      
+# Calls main function
 main()
