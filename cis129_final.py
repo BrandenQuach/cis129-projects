@@ -1,6 +1,6 @@
 # Final
 # Author: Branden Quach
-# May 16, 2024
+# May 17, 2024
 
 print(f'\nAnswer for Question 1:')
 total = 12.8 + 18.2 + 0.4
