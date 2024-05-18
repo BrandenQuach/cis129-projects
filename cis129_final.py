@@ -84,3 +84,36 @@ with open('accounts.txt', 'w') as file:
 
 with open('accounts.txt', 'r') as file:
     print(file.read())
+
+print(f'\nAnswer for Extra Credit:')
+def main():
+    Car = myCar(0, 0, '')
+    Car.set_year(2020)
+    Car.set_cylinders(4)
+    Car.set_start_engine('Start your engine')
+    print(f'Year:', Car.get_year())
+    print(f'Cylinders:', Car.get_cylinders())
+    print(Car.get_start_engine())
+
+class myCar():
+    def __init__(self, year, cylinders, start_engine):
+        self.year = year
+        self.cylinders = cylinders
+        self.start_engine = start_engine
+    def myCar(self, y, c, s):
+        myCar.year = y
+        myCar.cylinders = c
+        myCar.start_engine= s
+    def set_year(self, y):
+        self.year = y
+    def set_cylinders(self, c):
+        self.cylinders = c
+    def set_start_engine(self, s):
+        self.start_engine = s
+    def get_year(self):
+        return self.year
+    def get_cylinders(self):
+        return self.cylinders
+    def get_start_engine(self):
+        return self.start_engine
+main()
